@@ -93,21 +93,32 @@
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border selection:bg-purple-200/50;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gradient-to-br from-purple-50 via-white to-indigo-100 text-foreground antialiased min-h-screen;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply backdrop-blur-xl bg-white/60 dark:bg-white/10 shadow-md border border-white/20 rounded-xl;
+    @apply backdrop-blur-2xl bg-white/70 dark:bg-white/5 border border-white/30 dark:border-white/10 shadow-xl rounded-2xl;
+    box-shadow: 0 6px 36px 0 rgba(150, 76, 220, 0.10), 0 1.5px 4.5px rgba(47, 52, 70, 0.08);
+    border: 1.5px solid rgba(180, 154, 255, 0.15);
   }
   .fade-in {
-    animation: fade-in 0.5s ease-out forwards;
+    animation: fade-in 0.7s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+  .card-gradient {
+    background: linear-gradient(135deg, #fdfcfb 0%, #e9e4f0 100%);
+  }
+  .neo {
+    @apply shadow-[0_4px_24px_-2px_rgba(125,61,255,0.07)];
+  }
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
   }
 }
 
@@ -129,22 +140,23 @@
 @keyframes fade-in {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(18px) scale(0.97);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
 html {
   scroll-behavior: smooth;
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
@@ -155,7 +167,7 @@ html {
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #9b87f5aa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -178,8 +190,10 @@ html {
 
 .card {
   padding: 2em;
+  @apply card-gradient glass;
 }
 
 .read-the-docs {
-  color: #888;
+  color: #9b87f5;
 }
+
