@@ -107,7 +107,7 @@
     @apply backdrop-blur-xl bg-white/60 dark:bg-white/10 shadow-md border border-white/20 rounded-xl;
   }
   .fade-in {
-    @apply animate-fade-in;
+    animation: fade-in 0.5s ease-out forwards;
   }
 }
 
@@ -123,6 +123,17 @@
   100% {
     transform: scale(0.95);
     opacity: 0.7;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -171,15 +182,4 @@ html {
 
 .read-the-docs {
   color: #888;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
