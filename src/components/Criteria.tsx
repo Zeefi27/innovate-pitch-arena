@@ -1,20 +1,35 @@
-
 export function Criteria() {
   return (
-    <div className="py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-900 text-white">
+    <div className="py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-900 text-white relative fade-in">
+      {/* Floating dots */}
+      <div className="absolute inset-0 pointer-events-none opacity-20 -z-10">
+        {Array.from({ length: 10 }).map((_, i) => (
+          <div
+            key={i}
+            className="absolute rounded-full bg-purple-400"
+            style={{
+              width: `${8 + Math.random() * 14}px`,
+              height: `${8 + Math.random() * 14}px`,
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              opacity: Math.random() * 0.4 + 0.2,
+              animation: `pulse ${Math.random() * 3 + 3}s infinite`
+            }}
+          />
+        ))}
+      </div>
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Judging Criteria</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 heading-font">Judging Criteria</h2>
           <div className="w-20 h-1 bg-purple-400 mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-purple-200">
             How your idea will be evaluated by our expert panel
           </p>
         </div>
-        
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
             {/* Innovation & Creativity */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow">
+            <div className="glass backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow">
               <div className="flex items-start mb-4">
                 <div className="bg-purple-500/20 rounded-lg p-3 mr-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -22,7 +37,7 @@ export function Criteria() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Innovation & Creativity</h3>
+                  <h3 className="text-xl font-bold mb-2 heading-font">Innovation & Creativity</h3>
                   <div className="w-full bg-purple-200/10 rounded-full h-1.5 mb-4">
                     <div className="bg-gradient-to-r from-purple-300 to-purple-500 h-1.5 rounded-full" style={{ width: '30%' }}></div>
                   </div>
@@ -32,9 +47,8 @@ export function Criteria() {
                 </div>
               </div>
             </div>
-            
             {/* Feasibility & Implementation */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow">
+            <div className="glass backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow">
               <div className="flex items-start mb-4">
                 <div className="bg-blue-500/20 rounded-lg p-3 mr-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -42,7 +56,7 @@ export function Criteria() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Feasibility & Implementation</h3>
+                  <h3 className="text-xl font-bold mb-2 heading-font">Feasibility & Implementation</h3>
                   <div className="w-full bg-blue-200/10 rounded-full h-1.5 mb-4">
                     <div className="bg-gradient-to-r from-blue-300 to-blue-500 h-1.5 rounded-full" style={{ width: '25%' }}></div>
                   </div>
@@ -52,9 +66,8 @@ export function Criteria() {
                 </div>
               </div>
             </div>
-            
             {/* Presentation Skills */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow">
+            <div className="glass backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow">
               <div className="flex items-start mb-4">
                 <div className="bg-cyan-500/20 rounded-lg p-3 mr-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-cyan-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -62,7 +75,7 @@ export function Criteria() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Presentation Skills</h3>
+                  <h3 className="text-xl font-bold mb-2 heading-font">Presentation Skills</h3>
                   <div className="w-full bg-cyan-200/10 rounded-full h-1.5 mb-4">
                     <div className="bg-gradient-to-r from-cyan-300 to-cyan-500 h-1.5 rounded-full" style={{ width: '25%' }}></div>
                   </div>
@@ -72,9 +85,8 @@ export function Criteria() {
                 </div>
               </div>
             </div>
-            
             {/* Technical Depth */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow">
+            <div className="glass backdrop-blur-sm rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow">
               <div className="flex items-start mb-4">
                 <div className="bg-indigo-500/20 rounded-lg p-3 mr-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -82,7 +94,7 @@ export function Criteria() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold mb-2">Technical Depth</h3>
+                  <h3 className="text-xl font-bold mb-2 heading-font">Technical Depth</h3>
                   <div className="w-full bg-indigo-200/10 rounded-full h-1.5 mb-4">
                     <div className="bg-gradient-to-r from-indigo-300 to-indigo-500 h-1.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>

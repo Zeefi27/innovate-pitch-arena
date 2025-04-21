@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 interface FAQItem {
@@ -41,24 +40,23 @@ export function FAQ() {
   };
 
   return (
-    <div className="py-20 bg-gray-50">
+    <div className="py-20 bg-gray-50 fade-in">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 heading-font">Frequently Asked Questions</h2>
           <div className="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-lg text-gray-600">
             Find answers to common questions about Ideathon 2.0
           </p>
         </div>
-        
         <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
             <div 
               key={index} 
-              className="mb-5 border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-all hover:shadow-md"
+              className="mb-5 border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-all hover:shadow-md glass"
             >
               <button
-                className={`flex justify-between items-center w-full p-5 text-left font-semibold text-lg ${
+                className={`flex justify-between items-center w-full p-5 text-left font-semibold text-lg heading-font ${
                   activeIndex === index ? "bg-purple-50 text-purple-800" : "text-gray-900"
                 }`}
                 onClick={() => toggleFAQ(index)}
