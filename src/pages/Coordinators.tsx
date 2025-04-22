@@ -7,11 +7,11 @@ const Coordinators = () => {
       <div className="container mx-auto px-6">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">Event Coordinators</h1>
         
-        {/* Boys Coordinators Section */}
+        {/* Core Coordinators Section */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-purple-300 mb-6">Core Coordinators</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Core Coordinators */}
+            {/* Male Core Coordinators */}
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-purple-500/30">
               <div className="flex items-center gap-3 mb-2">
                 <User className="text-purple-400" />
@@ -50,6 +50,8 @@ const Coordinators = () => {
                 <a href="tel:9121872722" className="hover:text-purple-400 transition-colors">9121872722</a>
               </div>
             </div>
+
+            {/* Female Core Coordinator */}
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-purple-500/30">
               <div className="flex items-center gap-3 mb-2">
                 <User className="text-purple-400" />
@@ -59,14 +61,18 @@ const Coordinators = () => {
               <p className="text-purple-200 mb-2">Core Coordinator</p>
               <div className="flex items-center gap-2 text-purple-300">
                 <Phone size={16} />
-                <a href="tel:9121872722" className="hover:text-purple-400 transition-colors">8074795286</a>
+                <a href="tel:8074795286" className="hover:text-purple-400 transition-colors">8074795286</a>
               </div>
             </div>
-
-            {/* Regular Coordinators */}
+          </div>
+        </div>
+        
+        {/* Regular Coordinators Section */}
         <div>
           <h2 className="text-2xl font-bold text-purple-300 mb-6">Coordinators</h2>
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-purple-500/30">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Male Coordinators */}
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-purple-500/30">
               <div className="flex items-center gap-3 mb-2">
                 <User className="text-purple-400" />
                 <h3 className="text-xl font-semibold text-white">Akhnoor Rajesh</h3>
@@ -92,9 +98,8 @@ const Coordinators = () => {
               <p className="text-purple-200 mb-2">CSE(AI&ML) B-section, 3rd year</p>
               <p className="text-purple-200">Coordinator</p>
             </div>
-          </div>
-        </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            {/* Female Coordinators */}
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-purple-500/30">
               <div className="flex items-center gap-3 mb-2">
                 <User className="text-purple-400" />
