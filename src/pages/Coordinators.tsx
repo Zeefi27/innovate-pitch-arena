@@ -5,7 +5,7 @@ const Coordinators = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900/90 via-purple-800/90 to-indigo-900/90 py-20 px-4">
       <div className="container mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-purple-100 mb-12 text-center heading-font">
+      <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-purple-400 mb-12 text-center heading-font">
           Event Coordinators
         </h1>
         
