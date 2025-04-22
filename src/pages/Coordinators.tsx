@@ -9,7 +9,7 @@ const Coordinators = () => {
         
         {/* Boys Coordinators Section */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-purple-300 mb-6">Boys Coordinators</h2>
+          <h2 className="text-2xl font-bold text-purple-300 mb-6">Core Coordinators</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Core Coordinators */}
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-purple-500/30">
@@ -41,7 +41,7 @@ const Coordinators = () => {
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-purple-500/30">
               <div className="flex items-center gap-3 mb-2">
                 <User className="text-purple-400" />
-                <h3 className="text-xl font-semibold text-white">Sri Nitya</h3>
+                <h3 className="text-xl font-semibold text-white">Ningdhalli Aaryan</h3>
               </div>
               <p className="text-purple-200 mb-2">CSE(AI&ML) B-section, 3rd year</p>
               <p className="text-purple-200 mb-2">Core Coordinator</p>
@@ -50,9 +50,23 @@ const Coordinators = () => {
                 <a href="tel:9121872722" className="hover:text-purple-400 transition-colors">9121872722</a>
               </div>
             </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-purple-500/30">
+              <div className="flex items-center gap-3 mb-2">
+                <User className="text-purple-400" />
+                <h3 className="text-xl font-semibold text-white">Sri Nitya</h3>
+              </div>
+              <p className="text-purple-200 mb-2">CSE(AI&ML) B-section, 3rd year</p>
+              <p className="text-purple-200 mb-2">Core Coordinator</p>
+              <div className="flex items-center gap-2 text-purple-300">
+                <Phone size={16} />
+                <a href="tel:9121872722" className="hover:text-purple-400 transition-colors">8074795286</a>
+              </div>
+            </div>
 
             {/* Regular Coordinators */}
-            <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-purple-500/30">
+        <div>
+          <h2 className="text-2xl font-bold text-purple-300 mb-6">Coordinators</h2>
+          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-purple-500/30">
               <div className="flex items-center gap-3 mb-2">
                 <User className="text-purple-400" />
                 <h3 className="text-xl font-semibold text-white">Akhnoor Rajesh</h3>
@@ -80,10 +94,6 @@ const Coordinators = () => {
             </div>
           </div>
         </div>
-
-        {/* Girls Coordinators Section */}
-        <div>
-          <h2 className="text-2xl font-bold text-purple-300 mb-6">Girls Coordinators</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-purple-500/30">
               <div className="flex items-center gap-3 mb-2">
