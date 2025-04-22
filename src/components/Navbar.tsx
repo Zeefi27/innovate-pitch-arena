@@ -35,9 +35,9 @@ export function Navbar() {
           </div>
           
           <div className="hidden md:block">
-            <Button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border-none">
-            <a href="https://forms.gle/PJP9k9cePRTjSJoBA">Register Now</a>
-            </Button>
+          <a href="https://forms.gle/PJP9k9cePRTjSJoBA"> <Button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border-none">
+            Register Now
+            </Button></a>
           </div>
           
           {/* Mobile menu button */}
