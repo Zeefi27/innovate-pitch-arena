@@ -1,6 +1,6 @@
-
 import { CalendarCheck, MapPin, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export function Hero() {
   return (
@@ -59,8 +59,8 @@ export function Hero() {
               <Button size="lg" className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border-none">
                 Register Now
               </Button>
-              <Button size="lg" variant="outline" className="bg-white/10 text-white hover:bg-white/20 border-white/20">
-                Learn More
+              <Button size="lg" variant="outline" className="bg-white/10 text-white hover:bg-white/20 border-white/20" asChild>
+                <Link to="/coordinators">More Information</Link>
               </Button>
             </div>
           </div>
