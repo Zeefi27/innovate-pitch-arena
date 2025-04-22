@@ -56,13 +56,25 @@ export function Hero() {
             </div>
             
             <div className="flex flex-wrap gap-4">
-            <a href="https://forms.gle/PJP9k9cePRTjSJoBA"> <Button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border-none">
-            Register Now
-            </Button></a>
-              <Button size="lg" variant="outline" className="bg-white/10 text-white hover:bg-white/20 border-white/20" asChild>
-                <Link to="/coordinators">More Information</Link>
-              </Button>
-            </div>
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border-none" 
+              asChild
+            >
+              <a href="https://forms.gle/PJP9k9cePRTjSJoBA" target="_blank" rel="noopener noreferrer">
+                Register Now
+              </a>
+            </Button>
+
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="bg-white/10 text-white hover:bg-white/20 border-white/20" 
+              asChild
+            >
+              <Link to="/coordinators">More Information</Link>
+            </Button>
+          </div>
           </div>
           
           <div className="lg:w-1/2 flex justify-center">
