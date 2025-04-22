@@ -43,11 +43,11 @@ export function Hero() {
             <div className="mb-8 space-y-4">
               <div className="flex items-center gap-3">
                 <CalendarCheck className="h-5 w-5 text-purple-300" />
-                <span className="text-md font-medium">Event Date: Coming soon</span>
+                <span className="text-md font-medium">Event Date: 3rd May,2025</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-purple-300" />
-                <span className="text-md font-medium">Venue: Seminar Hall / Auditorium</span>
+                <span className="text-md font-medium">Venue: RUDRA SEMINAR HALL (C-BLOCK)</span>
               </div>
               <div className="flex items-center gap-3">
                 <Users className="h-5 w-5 text-purple-300" />
@@ -61,7 +61,7 @@ export function Hero() {
               className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border-none" 
               asChild
             >
-              <a href="https://forms.gle/PJP9k9cePRTjSJoBA" target="_blank" rel="noopener noreferrer">
+              <a href="https://forms.gle/Krps4sKVh4TK9kpV6" target="_blank" rel="noopener noreferrer">
                 Register Now
               </a>
             </Button>
@@ -72,7 +72,7 @@ export function Hero() {
               className="bg-white/10 text-white hover:bg-white/20 border-white/20" 
               asChild
             >
-              <Link to="/coordinators">More Information</Link>
+              <Link to="/coordinators">Co-ordinators</Link>
             </Button>
           </div>
           </div>
