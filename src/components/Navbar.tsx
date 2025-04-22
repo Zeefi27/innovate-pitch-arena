@@ -36,7 +36,7 @@ export function Navbar() {
           
           <div className="hidden md:block">
             <Button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border-none">
-              Register Now
+            <a href="https://forms.gle/PJP9k9cePRTjSJoBA">Register Now</a>
             </Button>
           </div>
           
