@@ -47,10 +47,15 @@ export function Timeline() {
                   </li>
                 </ul>
                 <div className="mt-4">
-                  <Button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border-none">
+                <Button 
+                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border-none" 
+                  asChild
+                >
+                  <a href="https://forms.gle/PJP9k9cePRTjSJoBA" target="_blank" rel="noopener noreferrer">
                     Register Now
-                  </Button>
-                </div>
+                  </a>
+                </Button>
+              </div>
               </div>
             </div>
           </div>
