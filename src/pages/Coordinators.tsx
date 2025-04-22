@@ -77,7 +77,7 @@ const Coordinators = () => {
                 <User className="text-purple-400" />
                 <h3 className="text-xl font-semibold text-white">Akhnoor Rajesh</h3>
               </div>
-              <p className="text-purple-200 mb-2">CSE(AI&ML) B-section, 3rd year</p>
+              <p className="text-purple-200 mb-2">CSE(AI&ML) A-section, 3rd year</p>
               <p className="text-purple-200">Coordinator</p>
             </div>
 
@@ -95,7 +95,7 @@ const Coordinators = () => {
                 <User className="text-purple-400" />
                 <h3 className="text-xl font-semibold text-white">Sathyam</h3>
               </div>
-              <p className="text-purple-200 mb-2">CSE(AI&ML) B-section, 3rd year</p>
+              <p className="text-purple-200 mb-2">CSE(AI&ML) A-section, 3rd year</p>
               <p className="text-purple-200">Coordinator</p>
             </div>
 
@@ -105,7 +105,7 @@ const Coordinators = () => {
                 <User className="text-purple-400" />
                 <h3 className="text-xl font-semibold text-white">G. Sravika</h3>
               </div>
-              <p className="text-purple-200 mb-2">CSE(AI&ML) B-section, 3rd year</p>
+              <p className="text-purple-200 mb-2">CSE(AI&ML) A-section, 3rd year</p>
               <p className="text-purple-200">Coordinator</p>
             </div>
 
@@ -114,7 +114,7 @@ const Coordinators = () => {
                 <User className="text-purple-400" />
                 <h3 className="text-xl font-semibold text-white">B. Harshini</h3>
               </div>
-              <p className="text-purple-200 mb-2">CSE(AI&ML) B-section, 3rd year</p>
+              <p className="text-purple-200 mb-2">CSE(AI&ML) A-section, 3rd year</p>
               <p className="text-purple-200">Coordinator</p>
             </div>
 
@@ -132,7 +132,7 @@ const Coordinators = () => {
                 <User className="text-purple-400" />
                 <h3 className="text-xl font-semibold text-white">Sravani</h3>
               </div>
-              <p className="text-purple-200 mb-2">CSE(AI&ML) B-section, 3rd year</p>
+              <p className="text-purple-200 mb-2">CSE(AI&ML) A-section, 3rd year</p>
               <p className="text-purple-200">Coordinator</p>
             </div>
           </div>
