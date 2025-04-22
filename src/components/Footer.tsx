@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
@@ -69,11 +69,17 @@ export function Footer() {
             <p className="text-gray-400">
               Department of Computer Science Engineering (AI & ML)
             </p>
-            <div className="mt-4">
-              <a href="src/pages/Coordinators.tsx" className="inline-block bg-white/10 hover:bg-white/20 transition-colors px-4 py-2 rounded text-sm font-medium">
-                Contact the Organizers
-              </a>
-            </div>
+            
+            
+              <div className="mt-4">
+                
+                <Link
+                  to="/coordinators"
+                  className="inline-block bg-white/10 hover:bg-white/20 transition-colors px-4 py-2 rounded text-sm font-medium text-white"
+                >
+                  Contact the Organizers
+                </Link>
+              </div>
           </div>
         </div>
         
