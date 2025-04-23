@@ -159,7 +159,7 @@ export function Hero() {
                 className="group bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border-none relative overflow-hidden shadow-lg shadow-purple-700/20 px-8"
                 asChild
               >
-                <a href="https://forms.gle/PJP9k9cePRTjSJoBA" target="_blank" rel="noopener noreferrer">
+                <a href="https://forms.gle/XRYVanNKxpns2vrT8" target="_blank" rel="noopener noreferrer">
                   <span className="relative z-10 flex items-center">
                     Register Now
                     <Rocket className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-200" />
