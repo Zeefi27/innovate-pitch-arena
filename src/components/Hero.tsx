@@ -95,7 +95,16 @@ export function Hero() {
       <div className="container mx-auto px-6 py-20 md:py-32 relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 items-center justify-between">
           <div className={`lg:w-1/2 transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="flex items-center gap-2 mb-6">
+            <div className="flex items-center gap-2 mb-6 relative">
+              {/* Background image container */}
+              <div className="absolute inset-0 overflow-hidden rounded-lg -z-10">
+                <img 
+                  src="/path/to/your/image.jpg" 
+                  alt="Background" 
+                  className="w-full h-full object-cover opacity-20" 
+                />
+              </div>
+              
               <div className="h-8 w-8 rounded-full bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center">
                 <Lightbulb className="h-4 w-4 text-white" />
               </div>
@@ -107,6 +116,7 @@ export function Hero() {
               <div className="h-8 w-8 rounded-full bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center">
                 <Brain className="h-4 w-4 text-white" />
               </div>
+            </div>
             </div>
             
             <h1 className="mb-8 text-4xl md:text-7xl font-bold leading-tight">
@@ -134,13 +144,13 @@ export function Hero() {
                 <div className="p-2 rounded-lg bg-purple-500/20">
                   <CalendarCheck className="h-5 w-5 text-purple-300" />
                 </div>
-                <span className="text-md font-medium">Event Date: Coming soon</span>
+                <span className="text-md font-medium">Event Date: MAY 03, 2025</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="p-2 rounded-lg bg-purple-500/20">
                   <MapPin className="h-5 w-5 text-purple-300" />
                 </div>
-                <span className="text-md font-medium">Venue: Seminar Hall / Auditorium</span>
+                <span className="text-md font-medium">Venue: C-BlOCk RUDRA SEMINAR HALL</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="p-2 rounded-lg bg-purple-500/20">
