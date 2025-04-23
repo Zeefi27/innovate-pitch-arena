@@ -304,7 +304,8 @@ const Coordinators = () => {
       </div>
       
       {/* Global styles */}
-      <style jsx global>{`
+      <style>
+        {`
         @keyframes float {
           0% {
             transform: translateY(0) translateX(0);
@@ -321,7 +322,8 @@ const Coordinators = () => {
             opacity: 0;
           }
         }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };

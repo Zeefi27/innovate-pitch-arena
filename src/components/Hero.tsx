@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { CalendarCheck, MapPin, Users, Sparkle, ChevronRight, Brain, Lightbulb, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -230,7 +231,8 @@ export function Hero() {
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-indigo-950 to-transparent"></div>
       </div>
       
-      <style jsx global>{`
+      <style>
+        {`
         @keyframes twinkle {
           0%, 100% { opacity: 0.1; }
           50% { opacity: 0.7; }
@@ -276,7 +278,8 @@ export function Hero() {
         .perspective-1000 {
           perspective: 1000px;
         }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 }
