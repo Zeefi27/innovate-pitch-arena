@@ -117,8 +117,7 @@ export function Hero() {
                 <Brain className="h-4 w-4 text-white" />
               </div>
             </div>
-            </div>
-            
+          
             <h1 className="mb-8 text-4xl md:text-7xl font-bold leading-tight">
               <div className="mb-2 relative">
                 <span className="relative inline-block">
