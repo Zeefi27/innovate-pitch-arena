@@ -55,6 +55,54 @@ const Coordinators = () => {
             </div>
           </div>
         </div>
+
+        {/* Faculty Coordinators Section */}
+        <div className="mb-20">
+          <div className="relative mb-12">
+            <h2 className="text-3xl font-bold text-center relative z-10">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300">
+                Faculty Coordinators
+              </span>
+            </h2>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="h-0.5 w-40 bg-gradient-to-r from-indigo-400/0 via-indigo-300/50 to-indigo-400/0"></div>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 mx-auto max-w-3xl">
+            <Card className="backdrop-blur-xl bg-indigo-900/60 border border-indigo-300/10 shadow-lg group relative flex items-center gap-4 p-6">
+              <div className="p-3 rounded-full bg-indigo-400/15 text-indigo-200 flex-shrink-0">
+                <User className="h-8 w-8" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-indigo-100">
+                  Ms. S. Pravalika
+                </h3>
+                <p className="text-indigo-200/90 mb-1 font-medium text-sm">
+                  Assistant Professor
+                </p>
+                <span className="text-indigo-300/70 text-sm">
+                  Dept of CSE(AI &amp; ML)
+                </span>
+              </div>
+            </Card>
+            <Card className="backdrop-blur-xl bg-indigo-900/60 border border-indigo-300/10 shadow-lg group relative flex items-center gap-4 p-6">
+              <div className="p-3 rounded-full bg-indigo-400/15 text-indigo-200 flex-shrink-0">
+                <User className="h-8 w-8" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-indigo-100">
+                  Dr. Srinivasulu
+                </h3>
+                <p className="text-indigo-200/90 mb-1 font-medium text-sm">
+                  Assistant Professor
+                </p>
+                <span className="text-indigo-300/70 text-sm">
+                  Dept of CSE(AI &amp; ML)
+                </span>
+              </div>
+            </Card>
+          </div>
+        </div>
         
         {/* Core Coordinators Section */}
         <div className="mb-24">
