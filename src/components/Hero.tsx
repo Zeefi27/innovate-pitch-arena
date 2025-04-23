@@ -25,7 +25,6 @@ export function Hero() {
 
   return (
     <div className="relative overflow-hidden min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 text-white">
-      {/* Cosmic background effect */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="stars-container absolute inset-0">
           {Array.from({ length: 50 }).map((_, i) => (
@@ -44,7 +43,6 @@ export function Hero() {
           ))}
         </div>
         
-        {/* Nebula effects */}
         <div className="absolute inset-0">
           {Array.from({ length: 5 }).map((_, i) => (
             <div 
@@ -66,7 +64,6 @@ export function Hero() {
           ))}
         </div>
         
-        {/* Space dust */}
         <div className="absolute inset-0 opacity-30">
           {Array.from({ length: 30 }).map((_, i) => (
             <div 
@@ -85,7 +82,6 @@ export function Hero() {
         </div>
       </div>
       
-      {/* Animated grid background */}
       <div 
         className="absolute inset-0 bg-grid-pattern opacity-10"
         style={{
@@ -184,10 +180,8 @@ export function Hero() {
           
           <div className={`lg:w-1/2 flex justify-center transition-all duration-1000 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="relative w-full max-w-md perspective-1000">
-              {/* Glow effect behind image */}
               <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/30 to-indigo-500/30 rounded-2xl blur-xl opacity-70 animate-pulse-slow"></div>
               
-              {/* Interactive floating elements */}
               <div className="absolute -left-8 -top-8 z-20 animate-float-slow">
                 <div className="p-4 backdrop-blur-md bg-white/5 rounded-xl border border-white/10 shadow-xl">
                   <Brain className="h-6 w-6 text-purple-300" />
@@ -200,7 +194,6 @@ export function Hero() {
                 </div>
               </div>
               
-              {/* Main image */}
               <div 
                 className="relative z-10 rounded-xl shadow-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-500 border border-white/10"
                 style={{
@@ -210,8 +203,8 @@ export function Hero() {
               >
                 <div className="absolute inset-0 bg-gradient-to-tr from-purple-800/40 to-indigo-800/40 mix-blend-overlay"></div>
                 <img 
-                  src="/api/placeholder/600/400" 
-                  alt="Ideathon 2.0" 
+                  src="/photo-1605810230434-7631ac76ec81" 
+                  alt="Ideathon group" 
                   className="w-full object-cover aspect-[4/3]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-950/80 via-transparent to-transparent"></div>
@@ -224,7 +217,6 @@ export function Hero() {
                 </div>
               </div>
               
-              {/* Interactive shine effect */}
               <div 
                 className="absolute inset-0 z-20 bg-gradient-to-tr from-white/5 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-xl pointer-events-none"
                 style={{
@@ -235,11 +227,9 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Decorative elements */}
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-indigo-950 to-transparent"></div>
       </div>
       
-      {/* Global styles */}
       <style jsx global>{`
         @keyframes twinkle {
           0%, 100% { opacity: 0.1; }
@@ -247,7 +237,7 @@ export function Hero() {
         }
         
         @keyframes float {
-          0% { transform: translateY(0) rotate(0deg); }
+          0%, 100% { transform: translateY(0) rotate(0deg); }
           50% { transform: translateY(-20px) rotate(180deg); }
           100% { transform: translateY(0) rotate(360deg); }
         }
